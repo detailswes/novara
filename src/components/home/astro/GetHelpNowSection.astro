@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import BlackMobileIcon from "@/assets/icons/black-phone.svg";
+import { commonBtnsData } from "@/data/commonBtnsData";
+import GetHelpNowBtn from "./GetHelpNowBtn.astro";
+import CallTextBtn from "./CallTextBtn.astro";
+---
+
+<section
+  class="bg-[#553665] py-10 md:py-[72px] px-4 flex flex-col justify-center items-center gap-7"
+>
+  <h2
+    class="max-w-[944px] w-full mx-auto text-[34px] font-Frank text-white font-normal leading-[42px] md:leading-[51px] text-center"
+  >
+    You don't have to face addiction alone. We offer a beacon of hope and a
+    supportive environment where you can reclaim your life and discover a
+    brighter future.
+  </h2>
+  
+
+  
+  <CallTextBtn />
+  <p class="font-medium text-base leading-[27px] text-white">
+   100% Confidential  | Zero Obligations | Risk-Free
+   </p>
+</section>

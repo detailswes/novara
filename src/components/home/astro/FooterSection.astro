@@ -1,0 +1,33 @@
+---
+import GetreviewsectionFooter from "./GetreviewsectionFooter.astro";
+import Callbtn from "./Callbtn.astro";
+---
+
+<section
+  class="empowering py-[72px] px-4 flex flex-col justify-center items-center text-white"
+>
+  <h2
+    class="max-w-[1100px] w-full mx-auto text-xl md:text-2xl md:text-[34px] font-Frank font-normal leading-[42px] md:leading-[51px] text-center"
+  >
+    Every recovery journey is unique. Our compassionate team provides
+    personalized care and evidence-based treatment, empowering you to achieve
+    lasting sobriety and a fulfilling life beyond addiction.
+  </h2>
+  <div class="align-center mt-[30px] mb-5">
+    <Callbtn />
+  </div>
+
+  <p class="font-medium text-base leading-[27px]">
+    Immediate Assistance | Safe and Secure | 24/7 Support 
+  </p>
+  <GetreviewsectionFooter />
+</section>
+<style>
+  .empowering {
+    background-image: url("../../../assets/images/empower.svg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>

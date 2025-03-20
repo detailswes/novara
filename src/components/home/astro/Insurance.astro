@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import { insuranceData } from "@/data/insuranceData";
+import BlackMobileIcon from "@/assets/icons/black-phone.svg";
+import { commonBtnsData } from "@/data/commonBtnsData";
+import Callbtn from "./Callbtn.astro";
+---
+
+<section
+  class="max-w-[1200px] mx-auto bg-purple-gradient text-white rounded-sm text-center mb-[80px] mt-10 md:mt-[67px] px-4 sm:px-4 pt-[78px] pb-[46px]"
+>
+  <h2 class="text-4xl md:text-5xl font-normal font-Frank">
+    {insuranceData.heading}
+  </h2>
+  <p
+    class="mt-2 text-base md:text-[22px] max-w-[882px] w-full mx-auto leading-8 md:leading-9"
+  >
+    {insuranceData.subheading}
+  </p>
+
+  <div
+    class="flex max-w-[900px] w-full mx-auto items-center justify-center flex-wrap gap-x-6 gap-y-2 mt-[46px]"
+  >
+    {
+      insuranceData.brands.map((item, index) => (
+        <div>
+          <Image src={item.image} alt={`Brand ${index + 1}`} />
+        </div>
+      ))
+    }
+  </div>
+
+  <p class="font-medium mx-auto mt-[46px] text-lg md:text-[22px] mb-5">
+    {insuranceData.description}
+  </p>
+
+  <Callbtn />
+  <p class="mt-5 font-medium">{insuranceData.btnbelowtext}</p>
+</section>

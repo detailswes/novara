@@ -1,0 +1,44 @@
+---
+import { recoverySectionData } from "@/data/recoverySectionData";
+import { Image } from "astro:assets";
+import HomeScreenForm from "@/components/home/react/HomeScreenForm";
+const { recoveryImage } = Astro.props;
+import StarsImage from "@/assets/images/stars.svg";
+---
+
+<section
+  class="py-16 bg-[#FDF7F3] md:py-[90px] flex justify-center items-start gap-[43px] flex-col md:flex-row px-4"
+>
+  <div class="w-full max-w-[455px]">
+    <Image src={recoveryImage} alt="start-recover" class="w-full" />
+
+    <div class="bg-white rounded-lg px-5 pt-6 transition-all w-full max-w-[455px] mt-[-6px]">
+      <div class="flex items-center gap-[10px] mb-3">
+        <div class="h-12 w-12 rounded-full bg-primary text-white flex items-center justify-center text-[30px] font-bold">
+          J
+        </div>
+        <div>
+          <div class="text-xl font-medium text-[#FF7300]">Jordan Miller</div>
+          <Image src={StarsImage} alt="stars" />
+        </div>
+      </div>
+
+      <!-- Optimized Text Section -->
+      <div class="cursor-pointer flex flex-col overflow-hidden">
+        <p class="text-gray-600 mb-2">
+          This team made starting my recovery easy. I filled out the form, and they quickly reached out for a confidential, no-pressure consultation. Highly recommend!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full max-w-[595px]">
+    <h2 class="text-4xl md:text-5xl font-normal font-Frank leading-[42px] md:leading-[58px] text-transparent bg-text-gradient bg-clip-text">
+      {recoverySectionData.title}
+    </h2>
+    <p class="mt-1 text-[#1F1168] text-base md:text-lg font-normal">
+      {recoverySectionData.description}
+    </p>
+    <HomeScreenForm client:load />
+  </div>
+</section>

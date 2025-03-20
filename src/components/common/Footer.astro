@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import WhiteLogo from "@/assets/images/white-logo.svg";
+import FooterBg from "../assets/images/footer-bg.svg";
+---
+
+<footer
+  class="footer-bg bg-center bg-contain bg-no-repeat relative overflow-hidden"
+>
+  <div
+    class="p-[18px] bg-[#dc6736] text-white z-50 flex flex-col items-center justify-center text-center"
+  >
+    <div class="w-full sm:max-w-60 flex justify-center">
+      <a href="/">
+        <Image src={WhiteLogo} alt="white-logo" class="md:w-[135px] w-32" />
+      </a>
+    </div>
+     <p class="mt-2 text-sm md:text-base">
+     123 Wellness Street, Suite 456, Springfield 
+    </p>
+    <p class=" text-sm md:text-base">
+     United Kingdom
+    </p>
+    <p class="mt-2 text-sm md:text-base">
+      Copyright © 2025 <a href="/" class="text-[#FBBC05]">Vitality Oasis</a> | All
+      Rights Reserved
+    </p>
+   
+  </div>
+</footer>
+
+<style>
+  .footer-bg {
+  background-image: url("{FooterBg}");
+}
+
+</style>

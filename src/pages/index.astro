@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HandsImage from "@/assets/images/hands.svg";
+import Faq from "@/components/home/react/Faq";
+import CallMessageIcon from "@/assets/icons/call-msg.svg";
+import HeroSection from "@/components/home/astro/HeroSection.astro";
+import RecoverySection from "@/components/home/astro/RecoverySection.astro";
+import Insurance from "@/components/home/astro/Insurance.astro";
+import GetHelpNowSection from "@/components/home/astro/GetHelpNowSection.astro";
+import HopeAndHealingSlider from "@/components/home/react/HopeAndHealingSlider";
+import TransformSection from "@/components/home/astro/TransformSection.astro";
+import StorySection from "@/components/home/react/Story";
+import FooterSection from "@/components/home/astro/FooterSection.astro";
+import Callbtn from "@/components/home/astro/Callbtn.astro";
+import NewCallBtn from "@/components/home/astro/NewCallBtn.astro";
+import Experience from "@/components/home/astro/Experience.astro";
+import { ExitIntentPopup } from "@/components/modal/ExitIntentPopup";
+---
+
+<Layout>
+  <HeroSection />
+  <ExitIntentPopup client:load />
+  <TransformSection />
+  <Insurance />
+  <HopeAndHealingSlider client:only />
+
+  <div class="text-center mt-[45px]">
+    <NewCallBtn />
+    <p
+      class="font-medium mt-2 md:mt-4 text-transparent bg-text-gradient bg-clip-text"
+    >
+      Confidential | Free | Available 24/7
+    </p>
+  </div>
+  <div class="w-full">
+    <StorySection client:only />
+  </div>
+  <GetHelpNowSection />
+  <RecoverySection
+    recoveryImage={HandsImage}
+    callMessageAction={CallMessageIcon}
+  />
+  <Experience />
+  <Faq client:load />
+  <FooterSection />
+</Layout>

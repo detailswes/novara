@@ -1,0 +1,66 @@
+---
+import { transformSectionData } from "@/data/transformSectionData";
+import { Image } from "astro:assets";
+import GetHelpNowBtn from "./GetHelpNowBtn.astro";
+---
+
+<div
+  class="max-w-[1200px] mx-4 border-l-4 border-primary lg:mx-auto mt-0 md:mt-20 bg-white p-4 lg:p-6 text-center shadow-[0px_3px_8px_0px_rgba(76,19,7,0.15)]"
+>
+  <p
+    class="text-center max-w-[940px] w-full mx-auto text-base md:text-xl text-[rgba(10,2,50,0.80)] lg:leading-8"
+  >
+    Our <span class="font-semibold"
+      >compassionate team, holistic therapies, and serene setting</span
+    > empower you to achieve lasting sobriety and a fulfilling life beyond addiction.
+  </p>
+</div>
+
+<div class="max-w-[1200px] mx-auto px-4 xl:px-0 mt-10 md:mt-[74px]">
+  <div class="mx-auto max-w-[1100px] w-full">
+    <h2
+      class="text-4xl md:text-5xl font-Frank font-normal leading-[42px] md:leading-[71px] text-transparent bg-text-gradient bg-clip-text text-center"
+    >
+      {transformSectionData.heading}
+    </h2>
+    <p
+      class="text-base md:text-lg text-text font-normal leading-8 md:leading-9 text-center mb-8 md:mb-[56px]"
+    >
+      {transformSectionData.description}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    {
+      transformSectionData.images.map((text) => (
+        <div class="relative group overflow-hidden rounded-lg cursor-pointer">
+          <Image
+            width="388"
+            height="330"
+            src={text.image}
+            alt={text.title}
+            class="w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-center">
+            <p class="text-white text-xl font-semibold max-w-[282px] mx-auto">
+              {text.title}
+            </p>
+            <p class="text-white mt-2 w-full mx-auto max-w-[338px]">
+              {text.description || "This is a sample description text."}
+            </p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="flex flex-col items-center text-center mt-[38px]">
+    <p class="text-xl md:text-[22px] text-black font-medium mb-[25px]">
+      {transformSectionData.CounsellorsText}
+    </p>
+    <GetHelpNowBtn/>
+    <p class="text-text font-medium mt-[25px]">
+      {transformSectionData.available}
+    </p>
+  </div>
+</div>

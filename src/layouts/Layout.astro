@@ -1,0 +1,33 @@
+---
+import Footer from "@/components/common/Footer.astro";
+import Navbar from "@/components/common/Navbar";
+import "@/styles/global.css";
+import SpeedInsights from "@vercel/speed-insights/astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Vitality Oasis</title>
+    <SpeedInsights />
+    <!--End of Tawk.to Script-->
+  </head>
+  <body>
+    <Navbar client:load />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
