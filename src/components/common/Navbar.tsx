@@ -82,7 +82,7 @@ export default function Navbar() {
 
         {/* Right: Help Icon & Text */}
         <div className="ml-auto">
-          <a href="tel:(855)-871-53321">
+          <a href="tel:(866) 619-7146">
             <div className="relative flex py-1 md:py-2 px-3 md:px-6 rounded-full bg-btn-gradient text-white overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group">
               {/* Background Slide Effect */}
               <div className="absolute inset-0 bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out"></div>
@@ -127,7 +127,7 @@ export default function Navbar() {
                   Free Confidential Helpline
                   </p>
                   <p className="text-xs md:text-xs font-medium md:font-semibold leading-6">
-                    (855)-871-53321
+                   (866) 619-7146
                   </p>
                 </div>
               </div>

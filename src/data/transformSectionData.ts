@@ -12,22 +12,22 @@ export const transformSectionData = {
     "Whether you're overwhelmed by recovery challenges or taking your first brave step, our expert team is here to guide you—every step of the way.",
   images: [
     {
-      title: "Designed with your recovery at top of mind",
+      title: "Safe, Medically Supervised Care",
       description:
-        "Our design prioritizes your recovery, ensuring every detail is crafted with your comfort and well-being in mind. From thoughtful features to supportive elements, we are committed to providing you with a seamless and restorative experience.",
+        "24/7 expert monitoring Safe, effective withdrawal support A private, healing environment",
       image: room1,
     },
     {
-      title: "Designed with your recovery at top of mind",
+      title: "Therapy That Gets to the Root",
       description:
-        "Our design prioritizes your recovery, ensuring every detail is crafted with your comfort and well-being in mind. From thoughtful features to supportive elements, we are committed to providing you with a seamless and restorative experience.",
+        "CBT. DBT. MAT. Family Therapy. We address not just addiction, but the root causes for lasting change.",
 
       image: room2,
     },
     {
-      title: "Designed with your recovery at top of mind",
+      title: "Healing That Goes Beyond Treatment",
       description:
-        "Our design prioritizes your recovery, ensuring every detail is crafted with your comfort and well-being in mind. From thoughtful features to supportive elements, we are committed to providing you with a seamless and restorative experience.",
+        "Yoga. Mindfulness. Nutrition. Movement Therapy. Rebuild your mind, body, and spirit for a thriving future.",
 
       image: room3,
     },

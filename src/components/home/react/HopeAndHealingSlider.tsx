@@ -2,9 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState, type JSX } from "react";
-import ProgramOneImage from "@/assets/images/program-one.webp";
-import ProgramTwoImage from "@/assets/images/program-two.webp";
-import ProgramThreeImage from "@/assets/images/program-three.webp";
+import ProgramOneImage from "@/assets/images/appoined-room.jpg";
+import ProgramTwoImage from "@/assets/images/wellness-center.jpg";
+import ProgramThreeImage from "@/assets/images/outside.webp";
+import ProgramFourImage from "@/assets/images/detox.webp";
+import ProgramFiveImage from "@/assets/images/program-two.webp";
+import ProgramSixImage from "@/assets/images/partial-hospitalization.jpg";
+import ProgramSevenImage from "@/assets/images/Intensive-Outpatient.jpg";
 import Popup from "@/components/modal/ProgramPopup";
 import { Image } from "astro:assets";
 interface program {
@@ -64,9 +68,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Inpatient Detox",
+      text: "Private, Well-Appointed Rooms",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "Your own space to recover, recharge, and reflect.",
     },
     {
       image: (
@@ -76,9 +80,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Alcohol Rehab",
+      text: "State-of-the-Art Wellness Center",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "Fitness, movement, and holistic care for a full-body reset.",
     },
     {
       image: (
@@ -88,45 +92,57 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Alumni Program",
+      text: "Outdoor Spaces for Relaxation",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "Sun, fresh air, and tranquility for mental clarity.",
     },
     {
       image: (
         <img
-          src={ProgramOneImage.src}
+          src={ProgramFourImage.src}
           alt="program-one"
           className="w-full mt-[18px]"
         />
       ),
-      text: "Inpatient Detox",
+      text: "Medical Detox",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "A safe, comfortable start to recovery.",
     },
     {
       image: (
         <img
-          src={ProgramTwoImage.src}
+          src={ProgramFiveImage.src}
           alt="program-two"
           className="w-full mt-[18px]"
         />
       ),
-      text: "Alcohol Rehab",
+      text: "Residential Treatment",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "24/7 care in a supportive environment.",
     },
     {
       image: (
         <img
-          src={ProgramThreeImage.src}
+          src={ProgramSixImage.src}
           alt="program-three"
           className="w-full mt-[18px]"
         />
       ),
-      text: "Alumni Program",
+      text: "Partial Hospitalization (PHP)",
       description:
-        "Achieve lasting recovery while balancing your work, family, and other commitments. Our outpatient programs provide the support and guidance you need to navigate the challenges of addiction and build a fulfilling life.",
+        "Structure & flexibility for real-life recovery.",
+    },
+    {
+      image: (
+        <img
+          src={ProgramSevenImage.src}
+          alt="program-three"
+          className="w-full mt-[18px]"
+        />
+      ),
+      text: "Intensive Outpatient (IOP)",
+      description:
+        "Step-down care for continued success.",
     },
   ];
 
@@ -144,10 +160,10 @@ const HopeAndHealingSlider = () => {
       {" "}
       <section className="px-4 md:px-0">
         <h2 className="text-center text-4xl md:text-5xl text-[#1F1168] mt-10 md:mt-[89px] font-normal font-Frank">
-          Find Hope and Healing
+          A Healing Space, Designed for Results.
         </h2>
         <p className="text-center text-base md:text-[22px] font-normal mt-2 md:mt-5 text-text">
-          Discover Our Comprehensive Rehab Programs
+          Where comfort meets clinical excellence—because environment matters in recovery.
         </p>
         <div className="w-full max-w-[200px] h-[1px] orb-gradient-line mx-auto"></div>
       </section>

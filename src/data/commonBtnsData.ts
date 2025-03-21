@@ -1,5 +1,5 @@
 export const commonBtnsData = {
-  getHelpNow: "Speak to a Care Counselor",
-  phoneNumber: "855-871-53321",
+  getHelpNow: "Get Instant, Confidential Support",
+  phoneNumber: "(866) 619-7146",
 };
 
