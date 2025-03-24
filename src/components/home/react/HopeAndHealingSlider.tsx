@@ -2,13 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState, type JSX } from "react";
-import ProgramOneImage from "@/assets/images/appoined-room.jpg";
-import ProgramTwoImage from "@/assets/images/wellness.jpg";
-import ProgramThreeImage from "@/assets/images/outside.jpeg";
-import ProgramFourImage from "@/assets/images/detox.webp";
-import ProgramFiveImage from "@/assets/images/program-two.webp";
-import ProgramSixImage from "@/assets/images/partial-hospitalization.jpg";
-import ProgramSevenImage from "@/assets/images/Intensive-Outpatient.jpg";
+import ProgramOneImage from "@/assets/images/group-therapy-room.webp";
+import ProgramTwoImage from "@/assets/images/fitness-and-wellness-center.webp";
+import ProgramThreeImage from "@/assets/images/dining-hall-nutritious-gourmet-meals.webp";
+import ProgramFourImage from "@/assets/images/creative-arts-therapy-room.webp";
+import ProgramFiveImage from "@/assets/images/learning-growth-center.webp";
+import ProgramSixImage from "@/assets/images/massage-room.webp";
+import ProgramSevenImage from "@/assets/images/sound-therapy-room.webp";
 import Popup from "@/components/modal/ProgramPopup";
 import { Image } from "astro:assets";
 interface program {
@@ -68,9 +68,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Private, Well-Appointed Rooms",
+      text: "Group Therapy Room",
       description:
-        "Your own space to recover, recharge, and reflect.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab lage group room.",
     },
     {
       image: (
@@ -80,9 +80,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "State-of-the-Art Wellness Center",
+      text: "Fitness & Wellness Center",
       description:
-        "Fitness, movement, and holistic care for a full-body reset.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab fitness center.",
     },
     {
       image: (
@@ -92,9 +92,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Outdoor Spaces for Relaxation",
+      text: "Dining Hall – Nutritious & Gourmet Meals",
       description:
-        "Sun, fresh air, and tranquility for mental clarity.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab dining area.",
     },
     {
       image: (
@@ -104,9 +104,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Medical Detox",
+      text: "Creative Arts Therapy Room",
       description:
-        "A safe, comfortable start to recovery.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab art room.",
     },
     {
       image: (
@@ -116,9 +116,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Residential Treatment",
+      text: "Learning & Growth Center",
       description:
-        "24/7 care in a supportive environment.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab small group room.",
     },
     {
       image: (
@@ -128,9 +128,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Partial Hospitalization (PHP)",
+      text: "Massage Room ",
       description:
-        "Structure & flexibility for real-life recovery.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab reiki and massage room.",
     },
     {
       image: (
@@ -140,9 +140,9 @@ const HopeAndHealingSlider = () => {
           className="w-full mt-[18px]"
         />
       ),
-      text: "Intensive Outpatient (IOP)",
+      text: "Music & Sound Therapy Room",
       description:
-        "Step-down care for continued success.",
+        "Novara Recovery Center Virginia Drug and Alcohol Rehab music studio.",
     },
   ];
 

@@ -85,7 +85,7 @@ export function ExitIntentPopup() {
   return (
     <>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-[90%] sm:max-w-[666px] bg-[#F7F7FB] !rounded-[20px]">
+        <DialogContent className="max-w-[90%] sm:max-w-[666px] bg-[#F7F7FB] !rounded-[20px] z-[9999]">
           <div className="w-full sm:max-w-[566px] mx-auto">
             <h2 className="text-center font-Frank font-normal text-[#1F1168] text-4xl md:text-5xl md:leading-[71px] pt-10">
               Wait! Don't leave without taking the first step toward recovery.
