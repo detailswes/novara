@@ -134,7 +134,7 @@ export default function AssesmentSteps() {
         )}
 
         {currentStep <= 2 && (
-          <Button className="bg-btn-gradient text-white uppercase">Save</Button>
+          <Button className="bg-orange-500 text-white uppercase">Save</Button>
         )}
         {currentStep <= 2 && (
           <Button onClick={handleContinue} className="uppercase bg-secondary">

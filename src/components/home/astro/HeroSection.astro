@@ -1,5 +1,5 @@
 ---
-import { heroSectionData } from "@/data/heroSectionData"; 
+import { heroSectionData } from "@/data/heroSectionData";
 import GetReviewSectionHeader from "./GetReviewSectionHeader.astro";
 import { Image } from "astro:assets";
 import MobileHeroImage from "@/assets/images/mob-hero.webp";
@@ -32,7 +32,8 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
 
       <div class="flex flex-col-reverse sm:flex-row mt-7 gap-[10px]">
         <div>
-          <div id="verifyBtn"
+          <div
+            id="verifyBtn"
             class="group shadow-btn-custom text-center cursor-pointer py-4 sm:py-[2px] rounded-full px-6 lg:min-w-[222px] w-full bg-transparent hover:bg-primary hover:text-white hover:border-primary transition-colors border-2 border-[#DC5E3D] leading-6"
           >
             <p
@@ -50,7 +51,7 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
         <div>
           <a href={`tel:${heroSectionData.contactNumber}`}>
             <div
-              class="relative flex py-5 justify-center sm:justify-start sm:py-1 md:py-3 px-3 md:px-6 rounded-full bg-btn-gradient text-white overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group"
+              class="relative flex py-5 justify-center sm:justify-start sm:py-1 md:py-3 px-3 md:px-6 rounded-full bg-orange-500 text-white overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group"
             >
               <div
                 class="absolute inset-0 bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out"
@@ -87,7 +88,9 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
                 </svg>
 
                 <div class="transition-all duration-300 ease-in-out">
-                  <p class="text-base md:text-sm font-bold">{heroSectionData.helpText}</p>
+                  <p class="text-base md:text-sm font-bold">
+                    {heroSectionData.helpText}
+                  </p>
                   <p
                     class="text-sm md:text-xs font-medium md:font-semibold leading-6"
                   >
@@ -111,7 +114,10 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
   <div class="flex-1 hero-section bg-right bg-contain bg-no-repeat"></div>
 
   <!-- Add the React component with client:load directive -->
-  <ContactFormPopupController client:load contactNumber={heroSectionData.contactNumber} />
+  <ContactFormPopupController
+    client:load
+    contactNumber={heroSectionData.contactNumber}
+  />
 </section>
 
 <style>
@@ -121,22 +127,23 @@ import ContactFormPopupController from "../react/ContactFormPopupController";
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const verifyBtn = document.getElementById('verifyBtn');
-    
+  document.addEventListener("DOMContentLoaded", () => {
+    const verifyBtn = document.getElementById("verifyBtn");
+
     if (verifyBtn) {
-      verifyBtn.addEventListener('click', (e) => {
+      verifyBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        
+
         if (window.innerWidth <= 768) {
           // On mobile: Open phone dialer
           const contactNumber = "85587153321";
           window.location.href = `tel:${contactNumber}`;
         } else {
           // On desktop: Dispatch custom event to open the React popup
-          document.dispatchEvent(new CustomEvent('openContactFormPopup'));
+          document.dispatchEvent(new CustomEvent("openContactFormPopup"));
         }
       });
     }
   });
-</script> 
+</script>
+

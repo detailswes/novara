@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import Logo from "@/assets/images/Logo.svg";
+import Logo from "@/assets/images/Logo.webp";
 import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
@@ -68,22 +68,22 @@ export default function Navbar() {
   return (
     <header
       ref={headerRef}
-      className={`bg-transparent px-4 z-50 ${
+      className={`bg-secondary px-4 z-50 ${
         isSticky
-          ? "fixed top-0 left-0 right-0 shadow-md transition-all duration-300 bg-white"
+          ? "fixed top-0 left-0 right-0 shadow-md transition-all duration-300"
           : "relative"
       }`}
     >
       <div className="max-w-[1200px] mx-auto flex items-center justify-between py-[14px]">
         {/* Left: Logo */}
         <a href="/" className="flex items-center">
-          <img src={Logo.src} alt="Logo" className="w-24 md:w-[107px]" />
+          <img src={Logo.src} alt="Logo" className="w-24 md:w-44" />
         </a>
 
         {/* Right: Help Icon & Text */}
         <div className="ml-auto">
           <a href="tel:(866) 619-7146">
-            <div className="relative flex py-1 md:py-2 px-3 md:px-6 rounded-full bg-btn-gradient text-white overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group">
+            <div className="relative flex py-1 md:py-2 px-3 md:px-6 rounded-full bg-orange-500 text-white overflow-hidden transition-all duration-300 ease-in-out items-center gap-1 md:gap-3 group">
               {/* Background Slide Effect */}
               <div className="absolute inset-0 bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out"></div>
 
@@ -124,10 +124,10 @@ export default function Navbar() {
                 {/* Text */}
                 <div className="transition-all duration-300 ease-in-out">
                   <p className="text-xs md:text-sm font-bold">
-                  Free Confidential Helpline
+                    Free Confidential Helpline
                   </p>
                   <p className="text-xs md:text-xs font-medium md:font-semibold leading-6">
-                   (866) 619-7146
+                    (866) 619-7146
                   </p>
                 </div>
               </div>
