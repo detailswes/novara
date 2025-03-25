@@ -2,6 +2,7 @@ import room1 from "@/assets/images/image1.svg";
 import room2 from "@/assets/images/image2.svg";
 import room3 from "@/assets/images/image3.svg";
 import room4 from "@/assets/images/image4.svg";
+import room5 from "@/assets/images/outpatient-program.webp";
 import GirlImage from "@/assets/images/open-hand-girl.png";
 
 export const transformSectionData = {
@@ -10,43 +11,43 @@ export const transformSectionData = {
     "Whether you're overwhelmed by recovery challenges or taking your first brave step, our expert team is here to guide you—every step of the way.",
   images: [
     {
-      title: "Safe, Medically Supervised Care",
+      title: "Detoxification",
       description:
-        "24/7 expert monitoring Safe, effective withdrawal support A private, healing environment",
+        "We offer a variety of drug & alcohol detox options from trusted inpatient detox partners to our outpatient detox management services, Novara Recovery Centers aims to provide you with addiction treatment services in Virginia that are designed for your individual success in recovery. Keep reading to learn more about how detox works, what to expect from detox and how we can help you.",
       image: room1,
     },
     {
-      title: "Therapy That Gets to the Root",
+      title: "Residential Inpatient",
       description:
-        "CBT. DBT. MAT. Family Therapy. We address not just addiction, but the root causes for lasting change.",
+        "If you or a loved one is struggling with substance abuse or co-occurring disorders, Novara Recovery Center can help. We offer a variety of treatment options including inpatient treatment through our trusted network of residential partners. Learn more about how inpatient treatment works and how it can help you find long-term recovery from substance use.",
 
       image: room2,
     },
     {
-      title: "Healing That Goes Beyond Treatment",
+      title: "Partial Hospitalization",
       description:
-        "Yoga. Mindfulness. Nutrition. Movement Therapy. Rebuild your mind, body, and spirit for a thriving future.",
+        "If you are looking for a partial hospitalization program in Virginia, Novara Recovery is your best choice. Our flexible and accessible treatment programs offer you the benefits of inpatient treatment without the complicated residential stay. To learn more about what PHP is and how our partial day program can help, keep reading.",
 
       image: room3,
     },
     {
-      title: "Designed with your recovery at top of mind",
+      title: "Intensive Outpatient",
       description:
-        "Our design prioritizes your recovery, ensuring every detail is crafted with your comfort and well-being in mind. From thoughtful features to supportive elements, we are committed to providing you with a seamless and restorative experience.",
+        "The intensive outpatient program (IOP) in Fairfax at Novara Recovery Center was designed to provide those struggling with substance abuse & co-occurring disorders with flexible treatment options that world around your personal schedule. Our intensive therapeutic solutions offers you a solid foundation for long-term success in addiction recovery.",
 
       image: room4,
     },
     {
-      title: "Designed with your recovery at top of mind",
+      title: "Outpatient Program",
       description:
-        "Our design prioritizes your recovery, ensuring every detail is crafted with your comfort and well-being in mind. From thoughtful features to supportive elements, we are committed to providing you with a seamless and restorative experience.",
+        "The outpatient addiction treatment program at Novara Recovery Center aims to empower you with the tools needed in order to achieve recovery. Through our integrative therapeutic solutions, you or your loved one can expect to learn valuable life skills that lead to a transformative experience in healing and wellness.",
 
-      image: room1,
+      image: room5,
     },
     {
-      title: "Designed with your recovery at top of mind",
+      title: "Aftercare & Support Services",
       description:
-        "Our design prioritizes your recovery, ensuring every detail is crafted with your comfort and well-being in mind. From thoughtful features to supportive elements, we are committed to providing you with a seamless and restorative experience.",
+        "At Novara Recovery Center, we are committed to supporting you through every phase of recovery. Our aftercare services include ongoing counseling, support groups, and relapse prevention planning to help ensure lasting success as you transition back to everyday life. We provide the resources and community you need to stay strong in your recovery journey.",
 
       image: GirlImage,
     },
